@@ -6,7 +6,7 @@
   participant D as Banco de dados
 
   U->>A: Endereço
-  A->>A: GPS(Coordenadas)
+  Note over A: GPS(Coordenadas)
   A->>+B: Endereço(cook, userID)
   B->>+D: Buscar 10 ruas e números userID
   D-->>B: Endereços
